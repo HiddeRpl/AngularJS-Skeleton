@@ -9,7 +9,7 @@
     "object-literal-sort-keys": false,
     "jsx-no-multiline-js": false,
     "no-submodule-imports": [
-      true,
+      true
     ],
     "max-classes-per-file": [true, 10],
     "no-implicit-dependencies": [true, "dev"],
