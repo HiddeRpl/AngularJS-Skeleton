@@ -112,8 +112,6 @@ module.exports = {
   entry: {
     app: [
       'babel-polyfill',
-      // TODO: Why problem?
-      // 'bootstrap-loader',
       './src/common/app.ts',
     ],
   },

@@ -1,5 +1,5 @@
 import * as angular from 'angular'
-import * as uiRouter from 'angular-ui-router'
+import 'angular-ui-router'
 
 // Used by webpack-require-loader, DO NOT REMOVE!
 // @require "../**/!(index)*.html";
@@ -12,13 +12,16 @@ import appConfig from './app.config'
 
 import './assets/style/main.scss'
 
+import appRoot from './scripts/controller/app-root'
+
 // import promoTooltip from './scripts/directive/promo-tooltip'
 
 // import submitId from './scripts/service/submit-id'
 
 angular
   .module('ui_cust', [
-    uiRouter,
+    appRoot,
+    'ui.router',
     home,
   ])
   .config(appConfig)
