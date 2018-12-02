@@ -1,0 +1,153 @@
+//
+// COLORS
+//
+
+$white:         #FFF;
+$black:         #000;
+
+// Gray
+$gray-dark:     #788088;
+$gray-dark-5:   #383b3c;
+$gray-dark-10:  #a4acb3;
+
+$gray:          #d4dae0;
+$gray-light:    #e6e6e6;
+$gray-light-20: #f7fafd;
+$gray-light-30: #eaf0f5;
+$gray-light-50: #f2f2f2;
+$gray-light-55: #f3f9ff;
+$gray-light-60: #f6f6f6;
+$gray-light-70: #f8f8f8;
+
+// Brown
+$brown:         #cd7833;
+
+// Orange
+$orange-dark:   #ff7200;
+$orange:        #ff9800;
+$orange-warning:#ff9700;
+
+// Yellow
+$yellow:        #ffe983;
+$yellow-dark:   #d2ba4d;
+
+// Green
+$green:         #22cb36;
+$green-light:   #bdf4bd;
+$green-dark:    #7cb07c;
+$green-lighter: #30c941;
+
+// Red
+$red:           #ff1e29;
+$red-light:     #f37979;
+$red-dark:      #da6767;
+
+// Blue
+$blue:           #1e90ff;
+$blue-light:     #48a5ff;
+$blue-light-50:  #7abdff;
+$blue-dark:      #2a3a4c;
+$blue-dark-90:   #192533;
+$blue-dark-80:   #526376;
+$blue-dark-50:   #0054a5;
+$blue-dark-40:   #086dce;
+$blue-dark-10:   #a8bec9;
+$blue-highlight: #437bb3;
+
+// Turquise
+$turquoise:           #00b9e7;
+$turquoise-dark:      #2a3a4c;
+$turquoise-dark-10:   #a8bec9;
+$turquoise-dark-30:   #049ec4;
+$turquoise-dark-40:   #008EB2;
+$turquoise-dark-50:   #0054a5;
+$turquoise-dark-80:   #526376;
+$turquoise-light:     #40CDF0;
+$turquoise-light-50:  #40CDF0;
+$turquoise-light-80:  #d6eaf9;
+
+// Vendor colors
+$facebook-blue:   #3b5998;
+$linkedin-blue:   #0077b5;
+$twitter-blue:    #1b95e0;
+
+// Individual colors
+$content-border-color:  #d7dce2;
+$global-text-color:     #304359;
+
+@mixin color($name, $color) {
+  .#{$name} {
+    color: $color;
+  }
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
+
+// Color classes
+// White
+@include color('white', $white);
+@include color('black', $black);
+// Turquoise
+@include color('turquoise', $turquoise);
+@include color('turquoise-light', $turquoise-light);
+@include color('turquoise-light-50', $turquoise-light-50);
+@include color('turquoise-dark', $turquoise-dark);
+@include color('turquoise-dark-80', $turquoise-dark-80);
+@include color('turquoise-dark-50', $turquoise-dark-50);
+@include color('turquoise-dark-40', $turquoise-dark-40);
+@include color('turquoise-dark-10', $turquoise-dark-10);
+
+// Gray
+@include color('gray-dark', $gray-dark);
+@include color('gray', $gray);
+@include color('gray-light', $gray-light);
+@include color('gray-light-60', $gray-light-60);
+@include color('gray-light-50', $gray-light-50);
+@include color('gray-light-30', $gray-light-30);
+@include color('gray-light-20', $gray-light-20);
+
+// Brown
+@include color('brown', $brown);
+
+// Orange
+@include color('orange-dark', $orange-dark);
+@include color('orange', $orange);
+
+// Yellow
+@include color('yellow', $yellow);
+
+// Green
+@include color('green', $green);
+@include color('green-light', $green-light);
+@include color('green-dark', $green-dark);
+
+// Red
+@include color('red', $red);
+@include color('red-light', $red-light);
+
+// Fonts
+$font-family-base: 'Source Sans Pro', sans-serif;
+$font-size-base: 14px;
+$font-size-base-l: $font-size-base + 2px;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-size-small: ceil(($font-size-base * 0.85));
+$text-color: $global-text-color;
+
+// General margin/padding/positioning variables
+$pos-tiny-value: 5px;
+$pos-small-value: 10px;
+$pos-semi-medium-value: 15px;
+$pos-medium-value: 20px;
+$pos-large-value: 30px;
+
+// Breakpoints
+$screen-xxl-min: 1770px;
+$screen-xl-min: 1200px;
+$screen-xl-max: ($screen-xxl-min - 1);
+$screen-lg-min: 980px;
+$screen-lg-max: ($screen-xl-min - 1);
+$screen-md-min: 768px;
+$screen-sm-min: 480px;
+$screen-xs-min: 320px;
