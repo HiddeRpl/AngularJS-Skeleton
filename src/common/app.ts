@@ -7,6 +7,7 @@ import 'angular-ui-router'
 // import userWelcome from '../components/user-welcome/user-welcome'
 
 import home from '../modules/home/home'
+import menu from '../modules/menu/menu'
 
 import appConfig from './app.config'
 
@@ -23,6 +24,7 @@ angular
     appRoot,
     'ui.router',
     home,
+    menu,
   ])
   .config(appConfig)
   .run(/* @ngInject */($rootScope, $state) => {
