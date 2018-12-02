@@ -103,10 +103,9 @@ const plugins = [
 
 module.exports = {
   devServer: {
-    host: '0.0.0.0',
     port: 5050,
-    allowedHosts: ['gui-customer.service.consul', 'gui-customer.dev.c1.org.pl'],
-    proxy: {'*': {target: 'http://localhost:4000', secure: false}},
+    open: 'Chrome',
+    compress: true,
   },
   devtool: isProd ? 'source-map' : 'eval',
   entry: {
